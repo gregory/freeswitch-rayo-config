@@ -2,8 +2,9 @@
   <settings>
     <param name="max-idle-sec" value="300"/>
   </settings>
+  <!--more info here: https://freeswitch.org/confluence/display/FREESWITCH/mod_rayo#mod_rayo-XMPPsettings-->
   <domain name="localhost" shared-secret="itsasecret">
-    <listen type="c2s" port="5222" address="127.0.0.1" acl=""/>
+    <listen type="c2s" port="5222" address="0.0.0.0" acl=""/>
     <users><user name="adhearsion" password="barfoo"/></users>
   </domain>
 </configuration>
